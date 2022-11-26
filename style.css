@@ -1,0 +1,194 @@
+/* button:nth-child(1){
+    background-color: rgb(212, 3, 3);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+}
+button:nth-child(1):hover{
+    opacity: 80%;
+}
+button:nth-child(1):active{
+    opacity: 60%;
+}
+
+button:nth-child(2){
+    background-color: white;
+    color: rgb(46, 46, 254);
+    border: 1px solid rgb(46, 46, 254);
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.15s, color 0.15s;
+    vertical-align: top;
+}
+button:nth-child(2):hover{
+    background-color: rgb(46, 46, 254);
+    color: white;
+}
+button:nth-child(2):active{
+    opacity: 70%;
+}
+
+button:nth-child(3){
+    background-color: rgb(76, 151, 238);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 76px;
+    border-radius: 18px;
+    /for having this effect it should be height/2/
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+button:nth-child(3):hover{
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.15);s
+    /horizontal to the right/vertical to down / blur /rgba/
+} */
+/***********************************input********************************/
+#wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .input-button:first-child {
+    display: inline-block;
+    width: 100%;
+  }
+  .input-wrapper:first-child {
+    width: calc(100% - 140px)
+  }
+  #KUNDE {
+    /* padding: 10px 5px; */
+    font: bold 16px'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 1px solid #a4c3ca;
+    background: #f1f1f1;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+  }
+  .btn-style:first-child {
+    /* margin: 0 10px; */
+    padding: 5px;
+    border: 1px solid #00748f;
+    height: 42px;
+    width: 100px;
+    cursor: pointer;
+    font: bold 12px Arial, Helvetica;
+    border-radius: 5px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #fff;
+    background-color: lightblue;
+  }
+/*header*****************************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.left-section{
+    background-color: aquamarine;
+    width: 170px;
+}
+.middle-section{
+    background-color: bisque;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+.right-section{
+    background-color: yellow;
+    width: 200px;
+}
+/*******video*******************************************************/
+.search-bar input[type="text"]{
+    width: 100%;
+}
+.video-title{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 300px; */
+    line-height: 20px;
+    margin-top: 0;
+}
+
+.video-stats{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(93, 93, 93);
+    margin: 0px 0px 0px 0px;
+}
+
+.video-author{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(93, 93, 93);
+    margin: 0px 0px 4px 0px;
+}
+/* .video-description{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+     letter-spacing: 0.35px;
+    color: rgb(93, 93, 93); 
+    margin: 0px 0px;
+    width: 300px;
+    display: none;
+} */
+.thumbnail{
+    width: 100%;
+    /* width: 300px; */
+    /* object-fit: cover;contain
+    object-position: left; */
+    /* vertical-align: top; */
+    /* display: block; */
+}
+/* .video-preview{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 15px;
+} */
+/* .video-container{
+    display: grid;
+    vertical-align: top;
+    gap: 20px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+} */
+.channel-picture{
+    background-color: gray;
+}
+.video-info{
+    background-color: gray;
+}
+.profile-picture{
+    width: 100%;
+    border-radius: 50px;
+}
+.thumbnail-row{
+    margin-bottom: 12px;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    row-gap: 40px;
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
