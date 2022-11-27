@@ -62,7 +62,7 @@ button:nth-child(3):hover{
     width: 100%;
 }
   .input-wrapper:first-child {
-    width: calc(100% - 40px)
+    width: calc(100% - 35px)
   }
   #KUNDE {
     /* padding: 10px 5px; */
@@ -97,6 +97,7 @@ button:nth-child(3):hover{
     flex-direction: row;
     justify-content: space-between;
     /* align-items: center; */
+    margin-bottom: 14px;
 }
 .left-section{
     background-color: aquamarine;
@@ -169,12 +170,12 @@ button:nth-child(3):hover{
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(3, 300px);
 } */
-.channel-picture{
+/* .channel-picture{
     background-color: gray;
 }
 .video-info{
     background-color: gray;
-}
+} */
 .profile-picture{
     width: 100%;
     border-radius: 50px;
@@ -201,6 +202,12 @@ button:nth-child(3):hover{
         grid-template-columns: 1fr;
         column-gap: 0;
     }
+    .channel-picture{
+        margin-left: 6px;
+    }
+    .video-info{
+        margin-left: 6px;
+    }
     
         
   }
@@ -209,6 +216,12 @@ button:nth-child(3):hover{
     .video-grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .channel-picture{
+        margin-left: 6px;
+    }
+    .video-info{
+        margin-left: 6px;
     }
     
         
