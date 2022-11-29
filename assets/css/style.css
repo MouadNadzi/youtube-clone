@@ -113,6 +113,24 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 }
 /*************** Header end ***************/
 /*************** Video start ***************/
+.video-section
+{
+    margin: 50px 30px 30px 250px;
+}
+#video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 50px;
+}
+.video-preview:hover
+{
+    cursor: pointer;
+}
+.video-preview-info {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
 
 .video-title {
     font-size: 14px;
@@ -124,7 +142,7 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 .video-stats {
     font-size: 12px;
     color: rgb(93, 93, 93);
-    margin: 0px 0px 0px 0px;
+    margin: 0;
 }
 
 .video-author {
@@ -135,10 +153,11 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 
 .thumbnail {
     width: 100%;
+    border-radius: 12px;
 }
 
 .profile-picture {
-    width: 100%;
+    width: 80%;
     border-radius: 50px;
 }
 
@@ -146,21 +165,14 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     margin-bottom: 12px;
 }
 
-#video-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 16px;
-    row-gap: 40px;
-}
-
-.video-preview-info {
-    display: grid;
-    grid-template-columns: 50px 1fr;
-}
 /*************** Video end ***************/
 /*************** Media Queries start ***************/
 
 @media screen and (min-width: 750px) and (max-width:999px) {
+    .video-section 
+    {
+        margin: 50px 50px;
+    }
     #video-grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -173,6 +185,9 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     }      
 }
 @media screen and (min-width: 600px) and (max-width:749px) {
+    .video-section {
+        margin: 50px 50px;
+        }
     #video-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -187,6 +202,9 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     }
 }
 @media screen and (min-width: 10px) and (max-width:599px) {
+    .video-section {
+            margin: 50px 80px;
+        }
     #video-grid{
         display: grid;
         grid-template-columns: 1fr;
