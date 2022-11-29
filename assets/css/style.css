@@ -19,7 +19,7 @@
 }
 
 .middle-section {
-    flex: 1;
+    width: 50%;
     padding-top: 13px;
 }
 
@@ -28,6 +28,65 @@
     padding-top: 13px;
 }
 
+/*************** Searh Bar ***************/
+.searchBar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchBar-border
+{
+    flex:1;
+    height: 38px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px 0 0 30px;
+}
+#search
+{
+    font-size:medium;
+    height: 100%;
+    width: 94%;
+    border: 0;
+    outline: none;
+}
+#search-btn
+{
+    height: 40px;
+    width: 10%;
+    background-color: rgba(185, 185, 185, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 30px 30px 0;
+}
+#search-microphone
+{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(185, 185, 185, 0.15);
+    border: 0;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+#search-btn:hover,
+#search-microphone:hover
+{
+    background-color: rgba(185, 185, 185, 0.3);
+    cursor: pointer;
+}
+/*************** Searh Bar end ***************/
+/*************** input type search ***************/
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 17px;
+    width: 17px;
+    background: url("../images/close.png");
+    background-size: contain;
+}
+input[type="search"]::-webkit-search-cancel-button:hover {
+    cursor: pointer;
+}
+/*************** input type search end ***************/
+/*************** Sign-in button ***************/
 #signin-btn
 {
     font-size: 14px;
@@ -44,6 +103,7 @@
     border: 0;
     cursor: pointer;
 }
+/*************** Sign-in button end ***************/
 #signin-btn-element
 {
     display: flex;
