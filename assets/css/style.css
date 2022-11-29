@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*************** Header start ***************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.left-section {
+    background-color: aquamarine;
+    width: 25%;
+}
+
+.middle-section {
+    background-color: bisque;
+    flex: 1;
+}
+
+.right-section {
+    background-color: yellow;
+    width: 25%;
+}
+/*************** Header end ***************/
+/*************** Video start ***************/
+
+.video-title {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    margin-top: 0;
+}
+
+.video-stats {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(93, 93, 93);
+    margin: 0px 0px 0px 0px;
+}
+
+.video-author {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(93, 93, 93);
+    margin: 0px 0px 4px 0px;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.profile-picture {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.thumbnail-row {
+    margin-bottom: 12px;
+}
+
+#video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+.video-preview-info {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+/*************** Video end ***************/
+/*************** Media Queries start ***************/
+
+@media screen and (min-width: 750px) and (max-width:999px) {
+    #video-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .channel-picture{
+        margin-left: 6px;
+    }
+    .video-info{
+        margin-left: 6px;
+    }      
+}
+@media screen and (min-width: 600px) and (max-width:749px) {
+    #video-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .channel-picture {
+        margin-left: 6px;
+    }
+
+    .video-info {
+        margin-left: 6px;
+    }
+}
+@media screen and (min-width: 10px) and (max-width:599px) {
+    #video-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+    .channel-picture{
+        margin-left: 6px;
+    }
+    .video-info{
+        margin-left: 6px;
+    }
+}
+/*************** Media Queries end ***************/
