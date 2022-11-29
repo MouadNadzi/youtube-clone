@@ -1,28 +1,55 @@
 * {
     margin: 0;
     padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 /*************** Header start ***************/
 .header {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    text-align: center;
+    height: 60px;
     margin-bottom: 20px;
 }
 
 .left-section {
-    background-color: aquamarine;
-    width: 25%;
+    width: 20%;
+    padding-top: 17px;
 }
 
 .middle-section {
-    background-color: bisque;
     flex: 1;
+    padding-top: 13px;
 }
 
 .right-section {
-    background-color: yellow;
-    width: 25%;
+    width: 20%;
+    padding-top: 13px;
+}
+
+#signin-btn
+{
+    font-size: 14px;
+    height: 34px;
+    width: 100px;
+    color: rgb(6, 95, 212);
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+#signin-btn:hover
+{
+    background-color: rgba(6, 95, 212, 0.15);
+    border: 0;
+    cursor: pointer;
+}
+#signin-btn-element
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0 10px;
 }
 /*************** Header end ***************/
 /*************** Video start ***************/
@@ -30,20 +57,17 @@
 .video-title {
     font-size: 14px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
     margin-top: 0;
 }
 
 .video-stats {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: rgb(93, 93, 93);
     margin: 0px 0px 0px 0px;
 }
 
 .video-author {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: rgb(93, 93, 93);
     margin: 0px 0px 4px 0px;
